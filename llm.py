@@ -21,6 +21,7 @@ def get_session_history(session_id: str) -> BaseChatMessageHistory:
     return store[session_id]
 
 
+
 def get_retriever():
     embedding = OpenAIEmbeddings(model='text-embedding-3-large')
     index_name = 'tax-index'
